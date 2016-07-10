@@ -21,8 +21,8 @@ def test_get_board_by_name_returns_board():
 
 def test_get_card_by_name_returns_board():
     cards = [MockWithName(name='first'),
-              MockWithName(name='second'),
-              MockWithName(name='third')]
+             MockWithName(name='second'),
+             MockWithName(name='third')]
     board_mock = Mock(**{'get_cards.return_value': cards})
     assert get_card_by_name(board_mock, 'second') is cards[1]
 

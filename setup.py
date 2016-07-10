@@ -18,5 +18,5 @@ setup(
     url='https://github.com/RobbieClarken/trellochecklist',
     packages=['trellochecklist'],
     install_requires=['trolly', 'click'],
-    entry_points={'console_scripts': []},
+    entry_points={'console_scripts': ['trellochecklist=trellochecklist.cli:main']},
 )
